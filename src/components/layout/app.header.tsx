@@ -47,7 +47,7 @@ function AppHeader() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <NavLink className="nav-link" to="/">{t("appHeader.home")}</NavLink>
-                        {/* <NavLink className="nav-link" to="/project"> {t("appHeader.project")}</NavLink> */}
+                        <NavLink className="nav-link" to="/project"> {t("appHeader.project")}</NavLink>
                         <NavLink className="nav-link" to="/about">{t("appHeader.about")}</NavLink>
                     </Nav>
                     <Nav className="ms-auto">
