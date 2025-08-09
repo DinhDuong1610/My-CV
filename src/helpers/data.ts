@@ -1,6 +1,6 @@
-import reactNativeImg from 'assets/project/react-native.png';
-import springMvcImg from 'assets/project/spring-mvc.png';
 import fourstarsImg from 'assets/project/fourstars.png';
+import greenstoreImg from 'assets/project/greenstore.png';
+import vietnamjourneyImg from 'assets/project/vietnamjourney.png';
 
 export const APP_DATA = {
     YOUTUBE_URL: "https://www.youtube.com/@dinhduong1610",
@@ -98,20 +98,28 @@ export const PROJECTS = [
     },
     {
         id: 2,
-        imgPath: reactNativeImg,
+        imgPath: greenstoreImg,
+        title: "Green Store",
+        description: "Green Store là một trang web thương mại điện từ dành cho hệ thống bách hóa xanh, với đầy đủ các tính năng cho người dùng và quản lý doanh số của admin",
+        githubLink: "https://github.com/DinhDuong1610/green-store",
+        demoLink: "https://green-store-production.up.railway.app"
+    },
+    {
+        id: 3,
+        imgPath: vietnamjourneyImg,
         title: "VietNam Journey",
         description: "Tổ chức bảo vệ môi trường Việt Nam journey ra đời để hiện thực hóa tình yêu môi trường của cộng đồng bằng hành động. Mọi người cùng chung tay bảo vệ môi trường",
         githubLink: "",
         demoLink: ""
-    },
-    {
-        id: 3,
-        imgPath: springMvcImg,
-        title: "VKU Exam",
-        description: "Xây dựng hệ thống quản lý tín chỉ, học phần và hệ thống thi trắc nghiệm online của trường VKU",
-        githubLink: "",
-        demoLink: ""
     }
+    // {
+    //     id: 4,
+    //     imgPath: springMvcImg,
+    //     title: "VKU Exam",
+    //     description: "Xây dựng hệ thống quản lý tín chỉ, học phần và hệ thống thi trắc nghiệm online của trường VKU",
+    //     githubLink: "",
+    //     demoLink: ""
+    // }
 ]
 
 export const SKILLS_DATA = [
