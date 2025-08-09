@@ -11,19 +11,17 @@ const AppContext = createContext<IAppContext | null>(null);
 
 export const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [theme, setTheme] = useState<ThemeContextType>(() => {
-        // const initialTheme =
-        //     localStorage.getItem("theme") as ThemeContextType || "dark";
-        const initialTheme = "dark";
+        const initialTheme =
+            (localStorage.getItem("theme") as ThemeContextType) || "dark";
+
+        document.documentElement.setAttribute('data-bs-theme', initialTheme);
         return initialTheme;
     });
 
     useEffect(() => {
-        const mode = localStorage.getItem("theme") as ThemeContextType;
-        if (mode) {
-            setTheme(mode);
-            document.documentElement.setAttribute('data-bs-theme', mode);
-        }
-    }, [])
+        localStorage.setItem("theme", theme);
+        document.documentElement.setAttribute('data-bs-theme', theme);
+    }, [theme]);
 
     return (
         <AppContext.Provider value={{
